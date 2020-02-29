@@ -1,4 +1,5 @@
 import discord
+import os
 
 client = discord.Client()
 
@@ -50,4 +51,5 @@ async def on_message(message):
         role = discord.utils.get(message.guild.roles, name="USER")
         await author.add_roles(role)
 
-client.run("NjgzMjk2ODA3MTIzODEyNTk5.Xlpf1Q.ApDrjR9QK4cif9IrdjzYuAP1g7o")
+access_token = os.environ[BOT_TOKEN"]
+client.run(access_token)
