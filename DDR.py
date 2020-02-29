@@ -51,5 +51,5 @@ async def on_message(message):
         role = discord.utils.get(message.guild.roles, name="USER")
         await author.add_roles(role)
 
-access_token = os.environ[BOT_TOKEN"]
+access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
